@@ -16,4 +16,8 @@
 > usermod -a -G sysadmin, manager bob
 > usermod -a -G sysadmin, manager rob
 > usermod -a -G sysadmin max
-```
+``` 
+3.
+```bash
+> chage -E `date -d "30 days" +"%Y-%m-%d"` max
+> chage -d 0 bob
