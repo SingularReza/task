@@ -28,3 +28,43 @@
 > chgrp manager /home/manager 
 > chmod 755 -R /home/manager 
 ```
+5.
+```
+> useradd -u 4223 -p linux123 gabriel
+```
+6.
+```
+> tar -cvzf /tmp/var/archive.tar.bz etc/hosts
+```
+7.
+```
+> cat etc/services|grep udp>udp_services.txt
+```
+8.
+```
+> top -o+%CPU
+```
+9.
+```
+> echo -e "\nalias stat='uptime'" >> ~/.bashrc
+```
+10.
+```
+vim hello.txt
+```
+11.
+```
+> apt install firewalld
+> firewall-cmd --get-default-zone
+> firewall-cmd --set-default-zone=dmz
+> firewall-cmd --get-zones>zones.txt
+```
+12.
+```
+> firewall-cmd --add-port=8080/tcp
+> firewall-cmd --list-ports>>zones.txt
+```
+13.
+```
+> firewall-cmd --zone="public" --add-forward-port=port=80:proto=tcp:toport=8080
+```
