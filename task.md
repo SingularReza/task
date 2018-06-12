@@ -1,12 +1,12 @@
 1.
-``` bash
+```
 > mkdir Audio
 > touch song{1..10}.mp3
 > mv song*.mp3 Music
 > ln -s Music Audio
 ```
 2.
-```bash
+```
 > sudo -i
 > groupadd sysadmin
 > groupadd manager
@@ -18,6 +18,13 @@
 > usermod -a -G sysadmin max
 ``` 
 3.
-```bash
+```
 > chage -E `date -d "30 days" +"%Y-%m-%d"` max
 > chage -d 0 bob
+```
+4.
+```
+> mkdir /home/manager 
+> chgrp manager /home/manager 
+> chmod 755 -R /home/manager 
+```
